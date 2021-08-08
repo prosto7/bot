@@ -25,7 +25,7 @@ class Main extends Component {
 <Router>
   <NaviBar/>
   <Switch>
-    <Route exact path="/" component={Home} />
+    <Route exact path="/bot" component={Home} />
     <Route exact path="/coins" component={mainApi} />
     <Route exact path="/about" component={About} />
   </Switch>

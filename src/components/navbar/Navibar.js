@@ -16,7 +16,7 @@ export function NaviBar() {
                 <NavbarToggle aria-controls="responsive-navbar-nav"/>
                 <NavbarCollapse className="header__nav" id="responsive-navbar-nav">
                 <Nav className="header__nav__right">
-                        <NavLink><Link className="nav__link__simple"to="/">Main</Link></NavLink>
+                        <NavLink><Link className="nav__link__simple"to="/bot">Main</Link></NavLink>
                         <NavLink><Link className="nav__link__simple" to="/coins">Prices</Link></NavLink>
                         <NavLink><Link className="nav__link__simple" to="/about">About</Link></NavLink>
                         <NavLink><Link  className=" nav__link__enter" onClick={() => setModalShow(true)} >LogIn</Link></NavLink>

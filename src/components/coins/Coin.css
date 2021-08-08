@@ -1,6 +1,12 @@
 .coin__row td>p {
   display: flex;
   justify-content: space-around;
+ 
+}
+
+.coin__row{
+  color:#F0E9E9;
+
 }
 .coin__name {
   font-weight: bold;
@@ -11,13 +17,17 @@
 }
 .coin__name>p {
   min-width: 85px;
-  max-width: 200px;
+ 
 }
 .coin__img {
   min-height: 100%;
   max-width: 30px;
 
  
+}
+.coin__table {
+  color:#F0E9E9;
+
 }
   
   .coin__img img {

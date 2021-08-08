@@ -24,25 +24,27 @@ function MainApi() {
     const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase())  // функция фильтр
     );
   return (
+     
     <div className="container-fluid coin">
+   
     <div className="container coin__app">
         <div className="coin__search">
-            <h1 className="coin__text">Поиск валюты</h1>
+            <h1 className="coin__text">Search Token</h1>
             <form>
-                <input type="text" placeholder="Поиск" className="coin__input" onChange={handleChange}/>
+                <input type="text" placeholder="Search" className="coin__input" onChange={handleChange}/>
             </form>
         </div>
 
         <Table responsive size="sm">
               <thead className="coin__table">
                 <tr className="table__header">
-                <th><h5>Icon</h5></th>
-                <th><h5>Coin</h5></th>
-                <th><h5>Ticker</h5></th>
-                <th><h5>Price</h5></th>
-                <th><h5>Volume</h5></th>
-                <th><h5>Changes</h5></th>
-                <th><h5>Market Cap</h5></th>
+                <th><h4>Icon</h4></th>
+                <th><h4>Coin</h4></th>
+                <th><h4>Ticker</h4></th>
+                <th><h4>Price</h4></th>
+                <th><h4>Volume</h4></th>
+                <th><h4>Changes</h4></th>
+                <th><h4>Market Cap</h4></th>
                 </tr>
             </thead>
             <tbody>

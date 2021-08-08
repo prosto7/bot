@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+
+
+.home__container {
+margin-top: 100px;
+color: whitesmoke;
+
+}
+
+.home__row {
+display: grid;
+grid-template-columns: 80% 20%;
+
+}
+.home__container__right h3 {
+    font-family: Montserrat;
+
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 150.9%;
+    letter-spacing: 0.12em;
+
+}
+.home__container__right {
+   
+    min-height: 300px;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+  
+ 
+}
+
+.home__button {
+    background: #96EB9E;
+    border-radius: 15px; 
+    width: 180px;  
+    height: 40px;
+    border: none;
+    margin: 0 55%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+
+.home__container__right .home__button a {
+    text-decoration: none;
+    color: black;
+}
+
+.home__button:hover {
+    background: #565a95;
+    color:blanchedalmond;
+}
+
+@media screen and (min-width: 1900px) {
+    .home__container__right h3{
+        min-width: 500px;
+    }
+    .home__container__right span {
+        white-space: nowrap;
+    }
+    .home__row {
+        display: grid;
+        grid-template-columns: 70% 30%;
+
+        }
+}
+@media (min-width:1365px) and (max-width: 1900px){  
+    .home__container__right span {
+        white-space: nowrap;
+    }
+    .home__row {
+        font-size: 15px;
+        grid-template-columns: 70% 30%;
+    }
+
+    .home__button {
+    
+        margin: 0 46%;
+      
+    }
+}
+@media screen and (max-width:1364px) {
+    .home__container__right{
+        font-size: 12px;
+       
+    }
+    .home__row {
+        font-size: 15px;
+        grid-template-columns: 60% 40%;
+    }
+    .home__button {
+    
+        margin: 0 33%;
+      
+    }
+
+}
+
+@media screen and (max-width:1023px) and (max-height:400px) {
+    .home__button {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .home__row {
+       
+        grid-template-columns: 0 100%;
+    }
+
+    .home__container__right{
+        font-size: 10px;
+    }
+
+    .home__container__right {
+   
+        min-height: 265px;
+        text-align: center;
+        display: flex;
+        align-items:flex-end;
+      
+    }
+    .home__button {
+        margin: 0 auto;
+    }
+ 
+}

@@ -3,16 +3,16 @@ import { Button } from 'react-bootstrap';
 import { NaviBar } from './navbar/Navibar';
 import React, {Component} from "react";
 import mainApi from "./coins/MainApi"
-import {Home} from './main/Home';
+import {Home} from './home/Home';
 import {About} from './about/About';
 
-
+import '../App.css'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
-  Nav,
+  Nav,  
 
 } from 'react-router-dom';
 
@@ -20,23 +20,18 @@ import {
 class Main extends Component {
     render() {
         return (
+<div className="container-fluid p-0 main-container">
 
-<div className="container-fluid p-0">
 <Router>
   <NaviBar/>
   <Switch>
     <Route exact path="/" component={Home} />
     <Route exact path="/coins" component={mainApi} />
     <Route exact path="/about" component={About} />
-
   </Switch>
-
-
 </Router>
-
-
-
-</div>   
+</div> 
+  
 )
         }
      }
